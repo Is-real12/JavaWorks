@@ -76,10 +76,10 @@ public class MBTI {
                 }
                     ;}
         for (int i = 0; i < joinA.size(); i++) {
-            System.out.println(joinA.get(i));
+            System.out.println("You selected "+joinA.get(i));
             if (i%4==0){
-                System.out.println("\nNumber of A Selected "+Atimes);
-                System.out.println("Number of B Selected "+Btimes);
+                System.out.println("\nNumber of A Selected "+Btimes);
+                System.out.println("Number of B Selected "+Atimes);
                 System.out.println("\n");
             }
         }
