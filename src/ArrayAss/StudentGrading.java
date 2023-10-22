@@ -46,6 +46,7 @@ public class StudentGrading {
 
                 System.out.printf("%-9s",arrayScore[i][j]);
                 sum += arrayScore[i][j];
+                
             }
 
             double average = sum /(double) arrayScore[i].length;
@@ -64,6 +65,10 @@ public class StudentGrading {
                 break;
             }
         }
+
         System.out.println(maxi);
+
+
+
     }
 }
