@@ -1,4 +1,4 @@
-package ArrayAssignment;
+package ArrayAss;
 
 import java.util.Arrays;
 
@@ -54,8 +54,7 @@ public class LargestElement{
     }
 
     public static void main(String[] args) {
-        char a = 'a';
-        System.out.println(a);
+       System.out.println();
 //        String name = new String("ade");
 //        String names = "ade";
 //

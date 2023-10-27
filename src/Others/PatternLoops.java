@@ -1,3 +1,5 @@
+package Others;
+
 public class PatternLoops {
     public static void main(String[] args) {
         int number = 5;

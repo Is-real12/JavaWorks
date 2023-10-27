@@ -1,9 +1,7 @@
-package ArrayAssignment;
+package ArrayAss;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class CheckoutShopping {
-
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

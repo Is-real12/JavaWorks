@@ -1,4 +1,4 @@
-package VerifyATM;
+package Others;
 
 import java.util.Scanner;
 

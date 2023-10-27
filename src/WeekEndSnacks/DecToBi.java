@@ -1,3 +1,5 @@
+package WeekEndSnacks;
+
 import java.util.ArrayList;
 
 public class DecToBi {
