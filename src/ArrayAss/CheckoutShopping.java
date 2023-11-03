@@ -20,7 +20,6 @@ public class CheckoutShopping {
 
             System.out.println("What did the user buy: ");
             String thingsBought = scanner.next();
-//            thingsBought = scanner.next();
             System.out.println("how many pieces the user buy: ");
             int pieces = scanner.nextInt();
 
