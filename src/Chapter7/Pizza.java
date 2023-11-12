@@ -1,5 +1,8 @@
 package Chapter7;
 
+import ArrayAss.AgainMet;
+import com.sun.jdi.PathSearchingVirtualMachine;
+
 import java.util.ArrayList;
 
 
@@ -7,9 +10,6 @@ public class Pizza {
 
 
 
-    public static void main(String[] args) {
-        System.out.println(PizaSize(2, 2, 2));
-    }
     public static String PizaSize(int classicPeople, int hungryPeople, int superHungryPeople){
 
         ArrayList<Integer> pizzaSizes = new ArrayList<>();
@@ -52,6 +52,14 @@ public class Pizza {
 
     }
 
+    public static void main(String[] args) {
+    }
+    private enum name{FINANCIAL, BUSINESS, EDUCATION}
+
+
+    public String setName(String name){
+        return name;
+    }
 }
 
 

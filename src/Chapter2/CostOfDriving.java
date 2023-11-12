@@ -9,7 +9,7 @@ Scanner input = new Scanner(System.in);
  System.out.print("Enter the distance to drive (in miles): ");
 double distance = input.nextDouble();
 
-System.out.print("Enter the fuel efficiency of the car (in miles per gallon): ");
+System.out.print("Enter the fuel efficiency of the ModaPac.MyumlPractice.car (in miles per gallon): ");
 double fuelEfficiency = input.nextDouble();
 
 System.out.print("Enter the price per gallon of fuel: ");
