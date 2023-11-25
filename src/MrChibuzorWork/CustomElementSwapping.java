@@ -6,8 +6,6 @@ import java.util.Arrays;
 public class CustomElementSwapping {
     public static void main(String[] args) {
         int[] newArray = {24, 18, 21, 22, 15};
-        int oddDigit = 0;
-        int evenDigit = 0;
 
         for (int i = 0; i < newArray.length - 1; i += 2) {
 

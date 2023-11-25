@@ -18,12 +18,14 @@ public class Seat {
         ArrayList<Integer> storingSeatGenerator = new ArrayList<>();
         boolean sittaken = true;
         int booleanslength = booleans.length;
+        int tiredOfUsingRandoM =0;
         while(booleans.length>0){
             System.out.println("Please type 1 for first class\t of 2 for economy");
             int user_input = scanner.nextInt();
             switch (user_input) {
                 case 1:
-                    seatSelector = random.nextInt(1, 6);
+
+                    seatSelector = random.nextInt(1, 6) ;
                     storingSeatGenerator.add(seatSelector);
                     if (!booleans.equals(false)){
                         System.out.println("");
