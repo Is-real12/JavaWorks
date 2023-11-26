@@ -38,6 +38,12 @@ public void deposit(int amount) throws InvalidAmountException {
         }
         return balance;
     }
-
+    public String toString(){
+        return String.format("""
+                Account Name: %s
+                Account Pin: %s
+                Account Number: %s
+                """,name, pins, number);
+    }
 
 }

@@ -4,6 +4,7 @@ import javax.security.auth.login.AccountNotFoundException;
 import java.util.ArrayList;
 
 public class Bank {
+    Account account;
     private String name;
     private int totalNumberOfAccountCreated;
     private final ArrayList<Account> accountList;
@@ -63,6 +64,7 @@ public class Bank {
     public Account findAccount(int number) throws OOPAss.AccountNotFoundException {
 
         if (!(accountList.get(number-1) == null)){
+
             return accountList.get(number-1);
         }
         else {
@@ -71,7 +73,11 @@ public class Bank {
         }
     }
 
-
+    public String toString(){
+        return String.format("""
+                %s
+                """, account.toString());
+    }
 
 
 public int getAccountListSize(){

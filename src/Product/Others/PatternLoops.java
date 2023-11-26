@@ -1,4 +1,4 @@
-package Others;
+package Product.Others;
 
 public class PatternLoops {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Others;
+package Product.Others;
 
 import org.junit.jupiter.api.Test;
 
