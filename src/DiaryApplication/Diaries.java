@@ -3,7 +3,7 @@ package DiaryApplication;
 import java.util.ArrayList;
 
 public class Diaries {
-    ArrayList<Diary> diaries;
+   private ArrayList<Diary> diaries;
 
     public void add(String userName, String password){
         Diary diary = new Diary(userName, password);

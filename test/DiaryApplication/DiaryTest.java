@@ -55,6 +55,9 @@ Diary diary = new Diary("ziri","1234");
         diary.updateEntry(1, "Our Face Shall shine", "Today in London Local Time i Shine");
 
     }
-
+@Test
+    void tryToPassWituoutUnloacking(){
+      assertThrows(IllegalArgumentException.class, ()-> diary.createEntry("",""));
+}
 
 }
