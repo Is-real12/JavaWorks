@@ -39,18 +39,19 @@ public static TicTacToe tic = new TicTacToe();
 
             index++;
 
-            if (index == 2) fearWoman = false;
+            if (index == 2) break;
 
             if (tic.checkGameResult().equalsIgnoreCase("X") || tic.checkGameResult().equalsIgnoreCase("O")) {
                 System.out.println(tic.checkGameResult() + " Wins yipee");
-                break;
+                System.exit(3);
             } else if (tic.checkGameResult().equalsIgnoreCase("Draw")) {
                 System.out.println("The game is a  draw");
-                break;
+                System.exit(3);
             }
-                playGame(ava);
+
 
         }
+        playGame(ava);
 //        System.out.println();
 
     }

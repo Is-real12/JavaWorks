@@ -9,22 +9,22 @@ public class GasMillage {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the miles: ");
         int mile = scanner.nextInt();
-        System.out.println("Enter the Gallon: ");
-        int gallon = scanner.nextInt();
+
         int sumMiles =  0;
         int sumGallon =  0;
-        sumGallon+=gallon;
-        sumMiles+=mile;
-        while (gallon != 0){
+        while (mile != 0){
             System.out.println("Enter the miles: ");
-             mile = scanner.nextInt();
+             int gallon = scanner.nextInt();
             System.out.println("Enter the Gallon: ");
             gallon = scanner.nextInt();
             sumGallon+=gallon;
             sumMiles+=mile;
 
+            System.out.println("Enter the miles: ");
+            mile = scanner.nextInt();
+
         }
-double average = sumMiles/sumGallon;
+double average = (double) sumMiles/sumGallon;
 
 //        System.out.println(average);
 //
