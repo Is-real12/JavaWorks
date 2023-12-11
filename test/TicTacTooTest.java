@@ -1,5 +1,5 @@
 import TicTacTo.Empty;
-import TicTacTo.TikTac;
+import TicTacTo.TicTacToe;
 import org.junit.jupiter.api.Test;
 
 import java.util.InputMismatchException;
@@ -10,7 +10,7 @@ class TicTacTooTest {
 
     @Test
     public void testThatMyBoardIsContainsEmpty(){
-        TikTac tiktac = new TikTac();
+        TicTacToe tiktac = new TicTacToe();
         Empty empty;
         assertTrue(tiktac.getEmpty());
 
@@ -18,7 +18,7 @@ class TicTacTooTest {
 
     @Test
     public void testThatUserCanOnlyBe_X_or_O_AndTheyCanChooseWhereToPlay (){
-        TikTac tiktac = new TikTac();
+        TicTacToe tiktac = new TicTacToe();
         assertThrows(InputMismatchException.class, ()->tiktac.play("W", 2));
         tiktac.play("X", 2);
         tiktac.play("O", 1);
@@ -26,33 +26,33 @@ class TicTacTooTest {
     }
     @Test
     public void testThatUserCantPlayInTheSamePlace (){
-        TikTac tiktac = new TikTac();
+        TicTacToe tiktac = new TicTacToe();
         tiktac.play("X", 1);
         assertThrows(IllegalArgumentException.class,  ()->tiktac.play("O", 1));
 
     }
     @Test
     void testThatAfterthreeMacthingXorOYouShouldWin(){
-        TikTac tiktac = new TikTac();
+        TicTacToe tiktac = new TicTacToe();
         tiktac.play("X", 1);
         tiktac.play("X", 4);
         tiktac.play("X", 7);
-        assertTrue(tiktac.gameRules());
+        assertEquals("X",tiktac.checkGameResult());
     }
 
     @Test
     void testThatAfterAllPlaysWithoutMacthing_XorO_it_A_Draw(){
-        TikTac tiktac = new TikTac();
+        TicTacToe tiktac = new TicTacToe();
         tiktac.play("X", 1);
-        tiktac.play("O", 2);
-        tiktac.play("X", 3);
+        tiktac.play("X", 2);
+        tiktac.play("O", 3);
         tiktac.play("O", 4);
         tiktac.play("X", 5);
-        tiktac.play("O", 6);
+        tiktac.play("X", 6);
         tiktac.play("X", 7);
         tiktac.play("O", 8);
-        tiktac.play("X", 9);
-        assertTrue(tiktac.gameRules());
+        tiktac.play("O", 9);
+        assertEquals( "Draw",tiktac.checkGameResult());
     }
 //    public static void main(String[] args) {
 //
